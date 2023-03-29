@@ -1,6 +1,7 @@
 import faker from "faker";
 
-const mount = (element) => {
+// export to running on SuperApp (Container)
+export const mount = (element) => {
     let products = '';
 
     for (let index = 0; index < 5; index++) {
@@ -20,6 +21,3 @@ if (process.env.NODE_ENV === 'development') {
     }
 
 }
-
-// RUNNING ON CONTAINER (SUPERAPP)
-export { mount }
